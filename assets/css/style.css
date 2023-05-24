@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.container {
+    justify-content: center;
+
+    width: 100%;
+
+    align-items: center;
+    display: flex;
+}
+
+.caja-blanca {
+    border-radius: 20px;
+    justify-content: center;
+
+    display: flex;
+    width: 500px;
+
+    margin-top: 60px;
+    box-shadow: 0px 0px 15px hsl(241, 100%, 89%)
+}
+
+/* Caja Azul*/
+.primary-card {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 250px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.primary-card h6 {
+    color: hsl(241, 100%, 89%);
+
+}
+
+.primary-card h4 {
+    margin: 5px;
+
+}
+
+.circulo {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    text-align: center;
+    text-justify: auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+.indicador {
+    margin: 0%;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.indicador-secundario {
+    margin: 0%;
+    font-size: 0.8rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.texto-bajada {
+    margin: 25px;
+    font-size: 0.8rem;
+    color: hsl(241, 100%, 89%);
+}
+
+/* Fin Caja azul*/
+
+/* Caja Blanca */
+
+.card-body {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+
+
+}
+
+.item-reaction {
+    background-color: hsl(0, 100%, 98%);
+    color: hsl(0, 100%, 67%);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.item-text {
+    flex-grow: 4;
+}
+
+.item-final {
+
+    color: hsl(224, 30%, 27%);
+}
+
+.item-percent {
+    color: hsl(241, 100%, 80%);
+}
+
+.item-memory {
+    background-color: hsl(39, 100%, 97%);
+    color: hsl(39, 100%, 56%);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.item-verbal {
+    background-color: hsl(166, 100%, 97%);
+    color: hsl(166, 100%, 37%);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.item-visual {
+    background-color: hsl(234, 85%, 97%);
+    color: hsl(234, 85%, 45%);
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.boton {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    width: 100%;
+    border-radius: 20px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    text-justify: auto;
+    padding-top: 10px;
+
+}
+
+.boton:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Fin Caja Blanca */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:375px) {
+    .caja-blanca {
+        width: 370px;
+        flex-direction: column;
+        margin-top: 0px;
+        padding: 0px;
+        box-shadow: none;
+    }
+
+
+    .card-body {
+        width: 340px;
+    }
+
+    .primary-card {
+        margin-top: 0px;
+        padding-top: 0px;
+        width: 370px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .item-text {
+        flex-grow: 1;
+    }
+
+    .circulo {
+        margin-left: 35%;
+    }
+}
